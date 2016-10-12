@@ -24,9 +24,5 @@
   ],
   "devDependencies": {
     "standard": "^7.0.0"
-  },
-  "files": [
-    "index.js",
-    "test.js"
-  ]
+  }
 }
