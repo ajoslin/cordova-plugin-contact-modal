@@ -19,8 +19,8 @@
     if ([data valueForKey:@"organization"] != nil) {
         contact.organizationName = [data valueForKey:@"organization"];
     }
-    if ([data valueForKey:@"jobTitle"] != nil) {
-        contact.jobTitle = [data valueForKey:@"jobTitle"];
+    if ([data valueForKey:@"title"] != nil) {
+        contact.jobTitle = [data valueForKey:@"title"];
     }
 
     // -- Phone Numbers

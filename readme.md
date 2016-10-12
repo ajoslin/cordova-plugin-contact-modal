@@ -1,4 +1,4 @@
-# cordova-plugin-contact-modal [![Build Status](https://travis-ci.org/ajoslin/cordova-plugin-contact-modal.svg?branch=master)](https://travis-ci.org/ajoslin/cordova-plugin-contact-modal)
+# cordova-plugin-contact-modal
 
 > Open the phone's "create contact" modal with some pre-filled values
 
