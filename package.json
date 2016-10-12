@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-contact-modal",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Open the phone's native 'create contact' modal with a vcards-js formatted contact",
+  "license": "MIT",
+  "repository": "ajoslin/cordova-plugin-contact-modal",
+  "author": {
+    "name": "Andrew Joslin",
+    "email": "andrewtjoslin@gmail.com",
+    "url": "ajoslin.com"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "contactsui",
+    "modal",
+    "new contact",
+    "view"
+  ],
+  "devDependencies": {
+    "standard": "^7.0.0"
+  },
+  "files": [
+    "index.js",
+    "test.js"
+  ]
+}

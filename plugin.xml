@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="org.ajoslin.contactmodal"
+        version="0.7.0">
+
+  <name>Contact Modal</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/contact-modal.js" target="js/contact-modal.js"/>
+
+  <js-module src="www/contact-modal.js" name="contact-modal">
+    <clobbers target="cordova.plugins.contactModal" />
+  </js-module>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="ContactModal">
+        <param name="ios-package" value="ContactModal" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/ContactModal.h" target-dir="ContactModalPlugin"/>
+    <source-file src="src/ios/ContactModal.m" target-dir="ContactModalPlugin"/>
+  </platform>
+
+</plugin>
