@@ -9,8 +9,6 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/contact-modal.js" target="js/contact-modal.js"/>
-
   <js-module src="www/contact-modal.js" name="contact-modal">
     <clobbers target="cordova.plugins.contactModal" />
   </js-module>
