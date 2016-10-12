@@ -52,6 +52,7 @@ Only the following subset of vcard properties are supported. Pull requests are w
   - `instagram`
   - `twitter`
   - `linkedIn`
+- `photo` (only base64 supported)
 
 ##### callback
 

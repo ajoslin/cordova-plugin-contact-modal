@@ -9,6 +9,7 @@
 
     NSDictionary* data = [command.arguments objectAtIndex:0];
 
+    // -- Basic
     CNMutableContact *contact = [[CNMutableContact alloc] init];
     if ([data valueForKey:@"firstName"] != nil) {
         contact.givenName = [data valueForKey:@"firstName"];
@@ -21,6 +22,12 @@
     }
     if ([data valueForKey:@"title"] != nil) {
         contact.jobTitle = [data valueForKey:@"title"];
+    }
+
+    // -- Photo
+    NSString* photoUrl = [data valueForKeyPath:@"photo.url"];
+    if (photoUrl != nil) {
+        contact.imageData = [[NSData alloc] initWithBase64EncodedString:photoUrl options:0];
     }
 
     // -- Phone Numbers
