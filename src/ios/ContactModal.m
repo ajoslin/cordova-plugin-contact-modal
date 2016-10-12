@@ -55,7 +55,7 @@
     // -- Social
     NSString* facebookValue = [data valueForKeyPath:@"socialUrls.facebook"];
     NSString* instagramValue = [data valueForKeyPath:@"socialUrls.instagram"];
-    NSString* twitterValue = [data valueForKeyPath:@"socualUrls.twitter"];
+    NSString* twitterValue = [data valueForKeyPath:@"socialUrls.twitter"];
     NSString* linkedInValue = [data valueForKeyPath:@"socialUrls.linkedIn"];
 
     NSMutableArray* social = [NSMutableArray array];
