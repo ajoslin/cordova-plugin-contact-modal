@@ -47,12 +47,12 @@ Only the following subset of vcard properties are supported. Pull requests are w
 - `workEmail`
 - `organization`
 - `title`
-- `socialUrls`
-  - `facebook`
-  - `instagram`
-  - `twitter`
-  - `linkedIn`
-- `photo` (only base64 supported)
+- `socialUrls` (only ios)
+  - `facebook` (only ios)
+  - `instagram` (only ios)
+  - `twitter` (only ios)
+  - `linkedIn` (only ios)
+- `photo` (only base64 supported, only ios)
 
 ##### callback
 

@@ -25,4 +25,14 @@
     <source-file src="src/ios/ContactModal.m" target-dir="ContactModalPlugin"/>
   </platform>
 
+  <platform name="android">
+    <config-file target="config.xml" parent="/*">
+      <feature name="ContactModal">
+        <param name="android-package" value="org.ajoslin.contactmodal.ContactModal"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/ContactModal.java" target-dir="src/org/ajoslin/contactmodal" />
+  </platform>
+
 </plugin>
