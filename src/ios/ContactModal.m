@@ -33,6 +33,7 @@
     // -- Phone Numbers
     NSString* workPhoneValue = [data valueForKey:@"workPhone"];
     NSString* cellPhoneValue = [data valueForKey:@"cellPhone"];
+    NSString* directPhoneValue = [data valueForKey:@"directPhone"];
 
     NSMutableArray* phoneNumbers = [NSMutableArray array];
 
@@ -42,13 +43,21 @@
     if (cellPhoneValue != nil) {
         [phoneNumbers addObject:[CNLabeledValue labeledValueWithLabel:CNLabelPhoneNumberMobile value:[CNPhoneNumber phoneNumberWithStringValue:cellPhoneValue]]];
     }
+    if (directPhoneValue != nil) {
+        [phoneNumbers addObject:[CNLabeledValue labeledValueWithLabel:@"direct dial" value:[CNPhoneNumber phoneNumberWithStringValue:directPhoneValue]]];
+    }
     contact.phoneNumbers = phoneNumbers;
 
     // -- Emails
     NSString* workEmailValue = [data valueForKey:@"workEmail"];
+    NSString* externalEmailValue = [data valueForKey:@"externalEmail"];
     NSMutableArray* emails = [NSMutableArray array];
+
     if (workEmailValue != nil) {
         [emails addObject:[CNLabeledValue labeledValueWithLabel:CNLabelWork value:workEmailValue]];
+    }
+    if (externalEmailValue != nil) {
+       [emails addObject:[CNLabeledValue labeledValueWithLabel:@"external" value:externalEmailValue]];
     }
     contact.emailAddresses = emails;
 

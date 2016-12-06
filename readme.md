@@ -38,13 +38,15 @@ Type: `object`
 
 Matches the format of a [vcards-js](https://github.com/enesser/vCards-js) object.
 
-Only the following subset of vcard properties are supported. Pull requests are welcome for more properties!
+Only the following subset of vcard properties are supported. Pull requests are welcome for more properties.
 
 - `firstName`
 - `lastName`
 - `workPhone`
 - `cellPhone`
+- `directPhone`
 - `workEmail`
+- `externalEmail`
 - `organization`
 - `title`
 - `socialUrls` (only ios)
