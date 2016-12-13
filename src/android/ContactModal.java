@@ -50,18 +50,19 @@ public class ContactModal extends CordovaPlugin {
 
               intent.putExtra(Intents.Insert.PHONE, safeGetJSONString(json, "workPhone"));
               intent.putExtra(Intents.Insert.PHONE_TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_WORK);
-              intent.putExtra(Intents.Insert.PHONE, safeGetJSONString(json, "cellPhone"));
-              intent.putExtra(Intents.Insert.PHONE_TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE);
-              intent.putExtra(Intents.Insert.PHONE, safeGetJSONString(json, "directPhone"));
-              intent.putExtra(Intents.Insert.PHONE_TYPE, "Direct Dial");
-
-              intent.putExtra(Intents.Insert.EMAIL, safeGetJSONString(json, "workEmail"));
-              intent.putExtra(Intents.Insert.EMAIL_TYPE, ContactsContract.CommonDataKinds.Email.TYPE_WORK);
-              intent.putExtra(Intents.Insert.EMAIL, safeGetJSONString(json, "externalEmail"));
-              intent.putExtra(Intents.Insert.EMAIL_TYPE, "External");
 
               intent.putExtra(Intents.Insert.SECONDARY_PHONE, safeGetJSONString(json, "cellPhone"));
               intent.putExtra(Intents.Insert.SECONDARY_PHONE_TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE);
+
+              intent.putExtra(Intents.Insert.TERTIARY_PHONE, safeGetJSONString(json, "directPhone"));
+              intent.putExtra(Intents.Insert.TERTIARY_PHONE_TYPE, "Direct Dial");
+
+              intent.putExtra(Intents.Insert.EMAIL, safeGetJSONString(json, "workEmail"));
+              intent.putExtra(Intents.Insert.EMAIL_TYPE, ContactsContract.CommonDataKinds.Email.TYPE_WORK);
+
+              intent.putExtra(Intents.Insert.SECONDARY_EMAIL, safeGetJSONString(json, "externalEmail"));
+              intent.putExtra(Intents.Insert.SECONDARY_EMAIL_TYPE, "External");
+
               cordova.getActivity().startActivity(intent);
           }
       });
