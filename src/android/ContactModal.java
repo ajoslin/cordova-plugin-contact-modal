@@ -50,6 +50,8 @@ public class ContactModal extends CordovaPlugin {
 
               intent.putExtra(Intents.Insert.PHONE, safeGetJSONString(json, "workPhone"));
               intent.putExtra(Intents.Insert.PHONE_TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_WORK);
+              intent.putExtra(Intents.Insert.PHONE, safeGetJSONString(json, "cellPhone"));
+              intent.putExtra(Intents.Insert.PHONE_TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE);
               intent.putExtra(Intents.Insert.PHONE, safeGetJSONString(json, "directPhone"));
               intent.putExtra(Intents.Insert.PHONE_TYPE, "Direct Dial");
 
